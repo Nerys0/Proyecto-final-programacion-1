@@ -129,17 +129,70 @@
                     </li>
                 </ul>
             </div>
-            <option value="sombreros">Sombreros</option>
-            <option value="mochilas">Mochilas</option>
-            <option value="bolsos">Bolsos</option>
-            <option value="hamacas">Hamacas</option>
-            <option value="plateria">Platería</option>
-            <option value="tapetes">Tapetes</option>
+                <div class="row">
+    
+                    <div class="col-md-6 pb-4">
+                        <div class="d-flex">
+                            <select id="filtro" class="form-control">
+                                <option value="todas">Todas</option>
+                                <option value="sombreros">Sombreros</option>
+                                <option value="mochilas">Mochilas</option>
+                                <option value="bolsos">Bolsos</option>
+                                <option value="zapatos">Zapatos</option>
+                                <option value="accesorio">Accesorios</option>
+                                <option value="tapetes">Tapetes</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- productos en el carro -->
+                <!-- fin de productos -->
+                 <!-- carrito -->
+                 <div class="container">
+                    <div class="row">
+                        <!-- Elementos generados a partir del JSON -->
+                        <main id="items" class="col-sm-8 row"></main>
+                        <!-- Carrito -->
+                        <aside class="col-sm-4">
+                            <h3>Carrito</h3>
+                            <!-- Elementos del carrito -->
+                            <ul id="carrito" class="list-group"></ul>
+                            <hr>
+                            <!-- Precio total -->
+                            <p class="text-right">Total: $ <span id="total"></span></p>
+                            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                            <button class="btn btn-info">
+                            <a href="pago.html" target="target_blank">Pagar</a>
+                            </button>
+                            <button class="btn btn-info">
+                            <a href="https://www.paypal.com/invoice/p/#X9AMTLCL84389TKX" target="target_blank">Pagar</a>
+                            </button>
             
-        </select>
+                        </aside>
+                    </div>
+                </div>
+    <!-- paginacion -->
+                <div class="row">
+                    <ul class="pagination pagination-lg justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark" href="#">3</a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
     </div>
-</div>
-</div>
+    <!-- final de contenido -->
+
+
 <!-- productos en el carro -->
 <!-- fin de productos -->
 <!-- carrito-->
