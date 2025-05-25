@@ -1,65 +1,87 @@
 <!DOCTYPE html>
-<html lang="es">
-<cabeza>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="Compatible con X-UA" content="IE=edge">
-    <meta name="viewport" content="ancho=ancho-del-dispositivo, escala-inicial=1.0">
-    <title>ArteFela</title>
-    <link rel="hoja de estilo" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="hoja de estilo" tipo="texto/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="hoja de estilo" href="./css/main.css">
-</cabeza>
-<cuerpo>
-
-    <div class="envoltorio">
-        <header class="encabezado-móvil">
-            <h1 class="logo">ArteFela</h1>
-            <button class="abrir-menú" id="abrir-menú">
-                <i class="bi bi-list"></i>
-            </botón>
-        </encabezado>
-        <aparte>
-            <button class="cerrar-menú" id="cerrar-menú">
-                <i class="bi bi-x"></i>
-            </botón>
-            <encabezado>
-                <h1 class="logo">ArteFela</h1>
-            </encabezado>
-            <navegación>
-                <ul class="menu">
-                    <li>
-                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
-                    </li>
-                    <li>
-                        <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Abrigos</button>
-                    </li>
-                    <li>
-                        <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Camisetas</button>
-                    </li>
-                    <li>
-                        <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Pantalones</button>
-                    </li>
-                    <li>
-                        <a class="boton-menu boton-carrito" href="./carrito.html">
-                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <pie de página>
-                © 2025 Nerys Lopez 
-            </pie de página>
-        </aparte>
-        <principal>
-            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
-            <div id="contenedor-productos" class="contenedor-productos">
-                <!-- Esto se va a rellenar con JS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" Haz crecer tu negocio a tu manera con ProdArt" content= "Sombreros,Mochilas,Hamacas,Bolsos." >
+    <title>ProdArt</title>
+    <!-- iconos-->
+    <link rel="apple-touch-icon" href="assets/img/">
+    <!-- css-->
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <link rel="stylesheet" href="assets/css/templatemo.css">
+     <link rel="stylesheet" href="assets/css/custom.css">
+     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+</head>
+<body>
+    <!-- inicio encabezado-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@prodart.com">info@prodart.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel: 057-320-202-02-02">057-320-202-02-02</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                </div>
             </div>
-        </principal>
-    </div>
-    
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/menu.js"></script>
-</cuerpo>
-</html>
+
+        </div>
+    </nav>
+    <!-- fin encabezado-->
+    <!-- inicio menu-->
+         <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                ProdArt
+            </a>
+            <!-- fecha -->
+            <script>
+                var f = new Date();
+                document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+                </script>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acercade.html">A cerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="compras.html">Compras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="compras.html">
+ 
